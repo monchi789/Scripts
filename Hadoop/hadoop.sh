@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Create user Hadoop 
+adduser hadoop
+
+# Update repositories
 apt update
 
 # Install java, curl and wget
@@ -11,9 +16,6 @@ java -version
 echo 'export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/' >> .bashrc
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/ echo $JAVA_HOME
-
-# Create user Hadoop 
-adduser hadoop
 
 # Download Hadoop
 wget https://archive.apache.org/dist/hadoop/common/hadoop-3.1.2/hadoop-3.1.2.tar.gz
