@@ -19,8 +19,8 @@ adduser hadoop
 wget https://archive.apache.org/dist/hadoop/common/hadoop-3.1.2/hadoop-3.1.2.tar.gz
 
 # Desconpress and change name
-tar xf hadoop-3.2.1.tar.gz
-mv hadoop-3.2.1 hadoop
+tar xf hadoop-3.1.2.tar.gz
+mv hadoop-3.1.2 hadoop
 
 # Move files to hadoop user
 cp -r hadoop /home/hadoop/
